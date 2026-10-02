@@ -2099,7 +2099,7 @@
 
 <body>
     <div id="preloader">
-        <img src="2.jpg" alt="Portada" class="preloader-full">
+        <img src="2.png" alt="Portada" class="preloader-full">
 
         <div class="texto-tocar">
             Abrir Invitación
@@ -2155,7 +2155,7 @@
     </section>
 <!-- ============================= -->
 <section class="foto-inicio" style="width: 100%; display: flex; justify-content: center; overflow: hidden;">
-    <img src="padres.jpg" 
+    <img src="padres.png" 
          alt="Joe y Elisa" 
          class="foto-entrada-celular"
        >
@@ -2203,7 +2203,7 @@
 </div>
 
    <section class="foto-inicio">
-        <img src="ChatGPT Image 22 sept 2026, 16_31_03-Photoroom.png" alt="Joe y Elisa" class="foto-entrada-celular">
+        <img src="Itinerario de boda en tonos mauve y dorado (1).png" alt="Joe y Elisa" class="foto-entrada-celular">
     </section>
 
 <style>
@@ -2252,6 +2252,181 @@
 
     box-shadow: 0 8px 25px rgba(0,0,0,0.12);
 }
+/* =========================================================
+   AJUSTE GENERAL PARA PC
+   Mantiene el diseño actual del celular
+   ========================================================= */
+
+@media (min-width: 769px) {
+
+    /* Todas las fotos independientes */
+    .foto-inicio {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    .foto-inicio .foto-entrada-celular {
+        width: auto;
+        max-width: 650px;
+        max-height: 650px;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Fotos que deben ocupar más ancho */
+    .foto-inicio img[src="padres.png"],
+    .foto-inicio img[src="Itinerario de boda en tonos mauve y dorado (1).png"],
+    .foto-inicio img[src="reg.png"] {
+        width: 100%;
+        max-width: 900px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* Fotos verticales: no permitir que se vuelvan gigantes */
+    .foto-inicio img[src="4.jpg"],
+    .foto-inicio img[src="5.jpg"],
+    .foto-inicio img[src="fod.png"],
+    .foto-inicio img[src="888.jpg"],
+    .foto-inicio img[src="2.png"] {
+        max-width: 650px;
+        max-height: 700px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* Imagen de padres */
+    .foto-inicio img[src="padres.png"] {
+        max-height: 700px;
+    }
+
+    /* Imagen de itinerario */
+    .foto-inicio img[src*="Itinerario"] {
+        max-height: 700px;
+    }
+
+    /* =====================================================
+       TARJETAS Y CONTENEDORES
+       ===================================================== */
+
+    .tarjeta-ubicacion {
+        max-width: 430px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tarjeta-dress-blanca {
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .capsula-tiempo {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* =====================================================
+       CARRUSEL EN PC
+       ===================================================== */
+
+    .carrusel-boda {
+        width: 100%;
+        max-width: 1000px;
+        margin: 30px auto;
+    }
+
+    .carrusel-slide img {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    /* =====================================================
+       SECCIONES DE IMÁGENES
+       ===================================================== */
+
+    section.foto-inicio {
+        padding: 15px 20px;
+        box-sizing: border-box;
+    }
+
+    /* Evita que las imágenes pequeñas se estiren */
+    section.foto-inicio img {
+        object-fit: contain;
+    }
+
+    /* =====================================================
+       EVITAR QUE EL CONTENIDO SE HAGA DEMASIADO ANCHO
+       ===================================================== */
+
+    .music-section {
+        max-width: 430px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .creditos {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+/* =========================================================
+   PC GRANDE — 1200px EN ADELANTE
+   ========================================================= */
+
+@media (min-width: 1200px) {
+
+    .foto-inicio .foto-entrada-celular {
+        max-width: 600px;
+        max-height: 650px;
+    }
+
+    .foto-inicio img[src="padres.png"],
+    .foto-inicio img[src="reg.png"],
+    .foto-inicio img[src*="Itinerario"] {
+        max-width: 850px;
+    }
+
+    .carrusel-boda {
+        max-width: 1000px;
+    }
+
+}
+
+
+/* =========================================================
+   PC MUY GRANDE — EVITA IMÁGENES EXCESIVAS
+   ========================================================= */
+
+@media (min-width: 1600px) {
+
+    .foto-inicio .foto-entrada-celular {
+        max-width: 550px;
+        max-height: 600px;
+    }
+
+    .foto-inicio img[src="padres.png"],
+    .foto-inicio img[src="reg.png"],
+    .foto-inicio img[src*="Itinerario"] {
+        max-width: 800px;
+    }
+
+}
 </style>
  <!-- ============================= -->
 
@@ -2272,6 +2447,11 @@
        >
 </section>
 
+<br>
+<br>
+<br>
+<br>
+
       <!-- TARJETA 2: DRESS CODE -->
         <div class="tarjeta-dress-blanca reveal">
             <h3>Dress code</h3>
@@ -2281,30 +2461,8 @@
 
             <div style="width: 40px; height: 1px; background: #8d7a64; margin: 15px auto; opacity: 0.2;"></div>
 
-            <!-- Especificaciones de vestimenta -->
-            <div style="margin-bottom: 20px; color: #5d4936; font-size: 0.8rem;">
-
-                <!-- Mujeres -->
-                <div style="margin-bottom: 20px;">
-                    <p style="font-size: 0.65rem; font-weight: 700; letter-spacing: 2px; margin-bottom: 10px;">MUJERES
-                    </p>
-                    <p style="font-size: 0.6rem; line-height: 1.4; color: #5d4936; margin-bottom: 10px;">
-                        Sugerimos vestido largo. <br>
-                        Tacones.<br>
-                    </p>
-                </div>
-
-                <div style="width: 40px; height: 1px; background: #8d7a64; margin: 15px auto; opacity: 0.2;"></div>
-
-                <!-- Hombres -->
-                <div style="margin-bottom: 20px;">
-                    <p style="font-size: 0.65rem; font-weight: 700; letter-spacing: 2px; margin-bottom: 10px;">HOMBRES
-                    </p>
-                    <p style="font-size: 0.6rem; line-height: 1.4; color: #5d4936; margin-bottom: 10px;">
-                        Traje formal.<br>
-                        Agradecemos asistir con corbata para mantener la armonía de la celebración.
-                    </p>
-                </div>
+          
+              
 
                 <!-- Paleta Sugerida -->
                 <div style="margin-bottom: 20px; color: #5d4936; font-size: 0.8rem; text-align: center;">
@@ -2370,32 +2528,132 @@
   </div>
 
 </div>
-
-<p style="font-size: 11px; font-style: italic; margin-top: 15px;">
-    "Tonos reservados para los novios. Les agradecemos elegir otros colores para su look."
-</p>
-                    <hr style="width: 40px; border: 0; border-top: 1px solid #a69683; margin: 15px auto;" />
-
-                    <p style="font-size: 0.7rem; color: #5d4936; letter-spacing: 1px;  margin-top: 15px;">
-                        Lo más importante es que se sientan cómodos
-                        y disfruten con nosotros de este día tan especial.
-                    </p>
-                </div>
-
-            </div> <!-- Fin especificaciones -->
-        </div> <!-- Fin tarjeta-dress-blanca -->
+</div>
 
     </div> <!-- Fin seccion-regalos -->
+<br>
+<br>
+<!-- CARRUSEL DE FOTOS -->
+<section class="carrusel-boda">
+    <div class="carrusel-track">
 
+        <div class="carrusel-slide">
+            <img src="4.jpg" alt="Joe y Elisa">
+        </div>
 
-<section class="foto-destacada-contenedor" style="max-width: 300px; width: 100%; margin: 0 auto; text-align: center;">
-    <img 
-        src="Gemini_Generated_Image_lnstcklnstcklnst__1_-removebg-preview.png" 
-        alt="Joe y Elisa" 
-        class="foto-destacada-img"
-        style="width: 100%; height: auto; display: block;"
-    >
+        <div class="carrusel-slide">
+            <img src="5.jpg" alt="Joe y Elisa">
+        </div>
+
+        <div class="carrusel-slide">
+            <img src="789.jpg" alt="Joe y Elisa">
+        </div>
+
+        <div class="carrusel-slide">
+            <img src="888.jpg" alt="Joe y Elisa">
+        </div>
+
+    </div>
 </section>
+
+<style>
+/* =========================================
+   CARRUSEL ELEGANTE DE BODA
+   ========================================= */
+
+.carrusel-boda {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.carrusel-track {
+    display: flex;
+    width: 100%;
+    animation: moverCarrusel 20s infinite;
+}
+
+.carrusel-slide {
+    min-width: 100%;
+    width: 100%;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.carrusel-slide img {
+    width: 100%;
+    height: 600px;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Movimiento automático */
+@keyframes moverCarrusel {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    45% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    70% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-300%);
+    }
+
+    95% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* =========================================
+   CELULAR
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .carrusel-slide img {
+        width: 100%;
+        height: 480px;
+        object-fit: cover;
+    }
+
+}
+
+/* Celulares pequeños */
+@media (max-width: 480px) {
+
+    .carrusel-slide img {
+        height: 430px;
+    }
+
+}
+</style>
 <div class="tarjeta-ubicacion">
 
     <img src="ceremonia.png" alt="Participa" class="icono-ubicacion">
@@ -2647,12 +2905,8 @@
     }
 }
     </style>
-
-    <section class="foto-inicio">
-        <img src="2.jpg" alt="Joe y Elisa" class="foto-entrada-celular">
-    </section>
-
- 
+<br>
+    <img src="2.png" alt="Portada" class="preloader-full">
 
     <div class="creditos" style="text-align: center; padding: 20px; color: #888;">
 
