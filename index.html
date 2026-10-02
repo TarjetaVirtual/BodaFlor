@@ -2452,85 +2452,107 @@
 <br>
 <br>
 
-      <!-- TARJETA 2: DRESS CODE -->
-        <div class="tarjeta-dress-blanca reveal">
-            <h3>Dress code</h3>
-            <img src="dress.png" alt="Dress Code" class="icon-dress"
-                style="width: 90px;  margin-bottom: 10px;">
-            <p class="tipo-vestimenta">FORMAL</p>
+     <!-- Cargar fuentes elegantes con Serif desde Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
 
-            <div style="width: 40px; height: 1px; background: #8d7a64; margin: 15px auto; opacity: 0.2;"></div>
+<style>
+  /* Estilos generales y tipografía para toda la tarjeta */
+  .tarjeta-dress-blanca {
+    font-family: 'Cormorant Garamond', 'Cinzel', Georgia, serif;
+    color: rgb(109, 88, 31);
+    text-align: center;
+  }
 
-          
-              
+  .tarjeta-dress-blanca h3 {
+    font-family: 'Cinzel', serif;
+    color:rgb(109, 88, 31);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
 
-                <!-- Paleta Sugerida -->
-                <div style="margin-bottom: 20px; color: #5d4936; font-size: 0.8rem; text-align: center;">
-                  <p style="letter-spacing: 2px; text-transform: uppercase; font-weight: bold; margin-bottom: 15px;">
-    Colores a Evitar
-</p>
+  .tipo-vestimenta {
+    font-family: 'Cinzel', serif;
+    color: rgb(109, 88, 31);
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
 
-<div style="
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  gap: 16px; 
-  flex-wrap: wrap; 
-  padding: 12px;
-  font-family: system-ui, -apple-system, sans-serif;
-">
+  /* Estilos para la sección de colores a evitar */
+  .color-swatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: rgb(109, 88, 31);
+    font-family: 'Cormorant Garamond', serif;
+  }
 
-  <!-- Estilo reutilizable para los items -->
-  <style>
-    .color-swatch {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 6px;
-      font-size: 12px;
-      color: #333;
-    }
-    .color-circle {
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
-      transition: transform 0.2s ease;
-    }
-    .color-circle:hover {
-      transform: scale(1.1);
-    }
-  </style>
+  .color-circle {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease;
+  }
 
-  <!-- Blanco -->
-  <div class="color-swatch">
-    <div class="color-circle" style="background-color: #FFFFFF; border: 1px solid #E0E0E0;"></div>
-    <span>Blanco</span>
+  .color-circle:hover {
+    transform: scale(1.1);
+  }
+</style>
+
+<!-- TARJETA 2: DRESS CODE -->
+<div class="tarjeta-dress-blanca reveal">
+  <h3>Dress code</h3>
+  <img src="dress.png" alt="Dress Code" class="icon-dress" style="width: 90px; margin-bottom: 10px;">
+  <p class="tipo-vestimenta">FORMAL</p>
+
+  <div style="width: 60px; height: 1px; background: rgb(109, 88, 31); margin: 15px auto; opacity: 0.5;"></div>
+
+  <!-- Paleta Sugerida -->
+  <div style="margin-bottom: 20px; color:rgb(109, 88, 31); font-size: 0.9rem; text-align: center;">
+    <p style="letter-spacing: 2px; text-transform: uppercase; font-family: 'Cinzel', serif; font-weight: bold; margin-bottom: 15px; color:rgb(109, 88, 31);">
+      Colores a Evitar
+    </p>
+
+    <div style="
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      gap: 16px; 
+      flex-wrap: wrap; 
+      padding: 12px;
+    ">
+
+      <!-- Blanco -->
+      <div class="color-swatch">
+        <div class="color-circle" style="background-color: #FFFFFF; border: 1px solid #E0E0E0;"></div>
+        <span>Blanco</span>
+      </div>
+
+      <!-- Marfil -->
+      <div class="color-swatch">
+        <div class="color-circle" style="background-color: #F2E9DE;"></div>
+        <span>Marfil</span>
+      </div>
+
+      <!-- Beige -->
+      <div class="color-swatch">
+        <div class="color-circle" style="background-color: #D8CCBB;"></div>
+        <span>Beige</span>
+      </div>
+
+      <!-- Borgoña -->
+      <div class="color-swatch">
+        <div class="color-circle" style="background-color: #6D2025;"></div>
+        <span>Borgoña</span>
+      </div>
+
+    </div>
   </div>
-
-  <!-- Marfil -->
-  <div class="color-swatch">
-    <div class="color-circle" style="background-color: #F2E9DE;"></div>
-    <span>Marfil</span>
-  </div>
-
-  <!-- Beige -->
-  <div class="color-swatch">
-    <div class="color-circle" style="background-color: #D8CCBB;"></div>
-    <span>Beige</span>
-  </div>
-
-
-  <!-- Borgoña -->
-  <div class="color-swatch">
-    <div class="color-circle" style="background-color: #6D2025;"></div>
-    <span>Borgoña</span>
-  </div>
-
-</div>
-</div>
-
-    </div> <!-- Fin seccion-regalos -->
+</div><!-- Fin seccion-regalos -->
 <br>
 <br>
 <!-- CARRUSEL DE FOTOS -->
@@ -2654,83 +2676,120 @@
 
 }
 </style>
+<style>
+  /* Color marrón (#614e1a) para la sección de ubicación y el botón de asistencia */
+  .tarjeta-ubicacion,
+  .tarjeta-ubicacion h3,
+  .tarjeta-ubicacion p,
+  .tarjeta-ubicacion a,
+  .btn-ubicacion,
+  .btn-confirmar {
+    color: #614e1a !important;
+  }
+
+  /* Color beige dorado (#EFE3C3) para "¡PRONTO!", "NOS VEMOS DENTRO DE" y el contador */
+  .capsula-tiempo h3,
+  .capsula-tiempo p,
+  .preparate,
+  .nos-vemos,
+  .timer-container,
+  .timer-grid,
+  .timer-item,
+  .timer-item span,
+  .timer-label,
+  .colon {
+    color: #EFE3C3 !important;
+  }
+
+  /* Bordes de los botones con el marrón */
+  .btn-ubicacion,
+  .btn-confirmar {
+    border-color: #614e1a;
+  }
+</style>
+
+<!-- SECCIÓN 1: UBICACIÓN Y PARTICIPACIÓN -->
 <div class="tarjeta-ubicacion">
 
     <img src="ceremonia.png" alt="Participa" class="icono-ubicacion">
 
-    <h3 class="titulo-ubicacion">COMPARTE CON NOSOTROS</h3>
+    <h3 class="titulo-ubicacion" style="color: #614e1a;">COMPARTE CON NOSOTROS</h3>
 
     <div class="info-ubicacion">
-        <p>Ayúdanos a guardar los mejores momentos de este día.</p>
+        <p style="color: #614e1a;">Ayúdanos a guardar los mejores momentos de este día.</p>
     </div>
 
     <div style="display:flex; flex-direction:column; gap:12px; align-items:center; margin-top:25px;">
 
         <a href="#" 
            class="btn-ubicacion"
-           style="width:80%; text-align:center;">
+           style="width:80%; text-align:center; color: #614e1a;">
             📸 SUBIR FOTOS
         </a>
 
         <a href="#" 
            class="btn-ubicacion"
-           style="width:80%; text-align:center;">
+           style="width:80%; text-align:center; color: #614e1a;">
             🎵 SUGERIR MÚSICA
         </a>
 
     </div>
 
 </div>
- <div class="capsula-tiempo" style="background-image: url('Captura\ de\ pantalla\ 2026-09-22\ 160719.png');">
-        <h3 class="preparate">¡PRONTO!</h3>
-        <p class="nos-vemos">NOS VEMOS DENTRO DE</p>
 
-        <div class="timer-container">
-            <div class="timer-grid">
-                <div class="timer-item">
-                    <span id="days">66</span>
-                    <div class="timer-label">DÍAS</div>
-                </div>
+<!-- SECCIÓN 2: CÁPSULA DEL TIEMPO / CONTADOR -->
+<div class="capsula-tiempo" style="background-image: url('Captura\ de\ pantalla\ 2026-09-22\ 160719.png');">
+    <!-- TITULOS EN COLOR ORIGINAL (#EFE3C3) -->
+    <h3 class="preparate" style="color: #EFE3C3;">¡PRONTO!</h3>
+    <p class="nos-vemos" style="color: #EFE3C3;">NOS VEMOS DENTRO DE</p>
 
-                <span class="colon">:</span>
+    <!-- CONTADOR EN COLOR ORIGINAL (#EFE3C3) -->
+    <div class="timer-container">
+        <div class="timer-grid">
+            <div class="timer-item">
+                <span id="days" style="color: #EFE3C3;">66</span>
+                <div class="timer-label" style="color: #EFE3C3;">DÍAS</div>
+            </div>
 
-                <div class="timer-item">
-                    <span id="hours">06</span>
-                    <div class="timer-label">HORAS</div>
-                </div>
+            <span class="colon" style="color: #EFE3C3;">:</span>
 
-                <span class="colon">:</span>
+            <div class="timer-item">
+                <span id="hours" style="color: #EFE3C3;">06</span>
+                <div class="timer-label" style="color: #EFE3C3;">HORAS</div>
+            </div>
 
-                <div class="timer-item">
-                    <span id="minutes">45</span>
-                    <div class="timer-label">MINUTOS</div>
-                </div>
-                  <span class="colon">:</span>
+            <span class="colon" style="color: #EFE3C3;">:</span>
 
-                <div class="timer-item">
-                    <span id="seconds">45</span>
-                    <div class="timer-label">SEGUNDOS</div>
-                </div>
+            <div class="timer-item">
+                <span id="minutes" style="color: #EFE3C3;">45</span>
+                <div class="timer-label" style="color: #EFE3C3;">MINUTOS</div>
+            </div>
+            
+            <span class="colon" style="color: #EFE3C3;">:</span>
 
-              
+            <div class="timer-item">
+                <span id="seconds" style="color: #EFE3C3;">45</span>
+                <div class="timer-label" style="color: #EFE3C3;">SEGUNDOS</div>
             </div>
         </div>
-
-        <!-- BOTÓN DE CONFIRMAR ASISTENCIA -->
-        <div style="margin-top: 35px;">
-            <a href="https://wa.me/593960934663?text=¡Hola!%20Quiero%20confirmar%20mi%20asistencia%20a%20la%20boda." 
-               target="_blank" 
-               class="btn-confirmar">
-                CONFIRMAR ASISTENCIA
-            </a>
-        </div>
     </div>
+
+    <!-- BOTÓN DE CONFIRMAR ASISTENCIA EN MARRÓN (#614e1a) -->
+    <div style="margin-top: 35px;">
+        <a href="https://wa.me/593960934663?text=¡Hola!%20Quiero%20confirmar%20mi%20asistencia%20a%20la%20boda." 
+           target="_blank" 
+           class="btn-confirmar"
+           style="color: #614e1a;">
+            CONFIRMAR ASISTENCIA
+        </a>
+    </div>
+</div>
 
     <style>
         .btn-confirmar {
             display: inline-block;
             background-color: #ffffff;
-            color: #8fa2c0;
+            color: rgb(109, 88, 31);
             text-decoration: none;
             padding: 12px 25px;
             border-radius: 25px;
@@ -2744,7 +2803,7 @@
         }
 
         .btn-confirmar:hover {
-            background-color: #f0f4f8;
+            background-color: rgb(220, 216, 203);
             transform: translateY(-2px);
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
         }
